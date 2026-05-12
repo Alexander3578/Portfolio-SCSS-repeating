@@ -1,0 +1,20 @@
+@use '../../components/mixins/Container' as *;
+@use '../../components/mixins/FlexWrapper' as *;
+
+.styledHeader {
+  padding: 40px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+
+  .container {
+    @include container();
+    @include flexWrapper(row , space-between, center);
+    padding-right: clamp(25px, 20vw, 196px);
+    padding-left: clamp(25px, 20vw, 189px);
+  }
+
+}
+

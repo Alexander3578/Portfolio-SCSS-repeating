@@ -1,0 +1,45 @@
+.navList {
+  display: flex;
+  gap: clamp(20px, 4vw, 67px);
+}
+
+.headerLink {
+  display: inline-block;
+  padding: 12px 20px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+
+    z-index: -1;
+
+    height: 8px;
+    border-radius: 4px;
+    background-color: blue;
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: .2s ease-in-out;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+
+  &:active::before {
+    right: 0;
+    left: 0;
+    height: 100%;
+    transform: scaleX(1);
+  }
+
+  &:active {
+    color: #fff;
+  }
+}
