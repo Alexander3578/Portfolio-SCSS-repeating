@@ -1,0 +1,31 @@
+@use '../../../components/mixins/Container' as *;
+@use '../../../components/mixins/FlexWrapper' as *;
+
+.aboutSection{
+}
+
+.aboutContainer{
+  @include container();
+
+  max-width: 865px;
+  width: 100%;
+}
+
+.aboutDescription {
+  margin-top: 20px;
+
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -17px;
+    top: 3px;
+    bottom: 4px;
+
+    display: inline-block;
+    width: 7px;
+    background-color: blue;
+    border-radius: 2px;
+  }
+}

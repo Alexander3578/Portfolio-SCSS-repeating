@@ -1,4 +1,5 @@
 import './HeaderMenu.scss'
+import {CustomLink} from '../../../components/link/CustomLink.tsx';
 
 const headerItemsList = [
     {title: 'Projects', id: 'projects'},
@@ -13,9 +14,9 @@ export const HeaderMenu = () => {
                     return (
                         <li key={item.id}
                             className={"listItem"}>
-                            <a className = {"headerLink"}>
-                                {item.title}
-                            </a>
+                            <CustomLink title={item.title}
+                                        size={'md'}
+                                        className={'headerLink'}/>
                         </li>
                     )
                 })}

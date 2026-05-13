@@ -1,0 +1,51 @@
+@use '../../../components/mixins/Container' as *;
+@use '../../../components/mixins/FlexWrapper' as *;
+
+.mainSection {
+  min-height: 70vh;
+}
+
+.mainContainer {
+  @include container();
+  @include flexWrapper(row, space-between, center);
+  padding-right: clamp(25px, 20vw, 127px);
+  padding-left: clamp(25px, 20vw, 189px);
+
+  position: relative;
+
+  .mainArrow {
+    position: absolute;
+    bottom: -44px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.mainContent {
+  max-width: 520px;
+  width: 100%;
+}
+
+.mainSmall {
+
+}
+
+.mainAuthor {
+  margin: 10px 0;
+}
+
+.mainText {
+
+}
+
+.mainLink {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.photoMain {
+  max-width: 577px;
+  max-height: 433px;
+  object-fit: cover;
+}
+
