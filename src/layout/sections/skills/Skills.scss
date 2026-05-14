@@ -1,0 +1,21 @@
+@use '../../../components/mixins/Container' as *;
+@use '../../../components/mixins/FlexWrapper' as *;
+
+.skillsSection {
+
+}
+
+.skillsContainer {
+  @include container();
+
+  padding-left: clamp(15px, 20vw, 189px);
+  padding-right: clamp(15px, 20vw, 170px);
+}
+
+
+.skillsList {
+  margin-top: 28px;
+  @include flexWrapper(row, flex-start, flex-start, wrap);
+  row-gap: 58px;
+  column-gap: 120px;
+}

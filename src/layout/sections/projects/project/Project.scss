@@ -1,0 +1,34 @@
+.projectCard {
+  max-width: 522px;
+  width: 400px;
+  flex-grow: 1;
+  min-height: 574px;
+  border-radius: 6px;
+  background-color: rgba(245, 242, 253, 1);
+  box-shadow: 2px 2px 32px 0 rgba(40, 38, 44, 0.15);
+}
+
+.projectPicture {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.projectContent {
+  padding: 0 6px 18px 18px;
+}
+
+.projectName {
+  margin: 29px 0 11px;
+}
+
+.stackList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+}
+
+.projectDescription {
+  margin-top: 16px;
+}

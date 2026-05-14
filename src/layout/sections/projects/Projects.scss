@@ -1,1 +1,22 @@
-.pro
+@use "../../../components/mixins/Container" as *;
+@use "../../../components/mixins/FlexWrapper" as *;
+
+.projectSection {
+  min-height: 80vh;
+}
+
+.projectContainer {
+  @include container();
+  padding-left: clamp(15px, 20vw, 189px);
+  padding-right: clamp(15px, 20vw, 180px);
+
+}
+
+.projectTitle {
+  margin-bottom: 32px;
+}
+
+.stackListWrapper {
+  @include flexWrapper(row, space-between, flex-start, wrap);
+  gap: 27px;
+}

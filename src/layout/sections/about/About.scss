@@ -9,6 +9,8 @@
 
   max-width: 865px;
   width: 100%;
+  padding-left: clamp(15px, 20vw, 189px);
+  margin: 0;
 }
 
 .aboutDescription {
