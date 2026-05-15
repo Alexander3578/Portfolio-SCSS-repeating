@@ -17,7 +17,8 @@ export const Project = ({imgSrc, description, stackList, title}: ProjectPropsTyp
             <div className={'projectContent'}>
                 <h3 className={'projectName'}>{title}</h3>
                 <ul className={'stackList'}>
-                    {stackList.map(item => <StackItem item={item}/>)}
+                    {stackList.map((item, index) => <StackItem key={index}
+                                                               item={item}/>)}
                 </ul>
                 <p className={'projectDescription'}>{description}</p>
             </div>

@@ -1,0 +1,14 @@
+.skillItem {
+  max-width: 120px;
+  width: 88px;
+  flex-grow: 1;
+}
+
+.skillPicture {
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.skillName {
+  text-align: center;
+}

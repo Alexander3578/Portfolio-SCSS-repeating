@@ -12,8 +12,7 @@
   .container {
     @include container();
     @include flexWrapper(row , space-between, center);
-    padding-right: clamp(25px, 20vw, 196px);
-    padding-left: clamp(25px, 20vw, 189px);
+    padding-right: clamp(25px, 20vw, 70px);
   }
 
 }

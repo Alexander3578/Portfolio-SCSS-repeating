@@ -7,9 +7,6 @@
 
 .projectContainer {
   @include container();
-  padding-left: clamp(15px, 20vw, 189px);
-  padding-right: clamp(15px, 20vw, 180px);
-
 }
 
 .projectTitle {

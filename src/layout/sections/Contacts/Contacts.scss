@@ -1,0 +1,39 @@
+@use '../../../components/mixins/Container' as *;
+@use '../../../components/mixins/FlexWrapper' as *;
+
+.contactsSection {
+  min-height: 20vh;
+}
+
+.contactsContainer {
+  @include container();
+}
+
+.contactsForm {
+  margin: 0 auto;
+  max-width: 532px;
+}
+
+.inputsWrapper {
+  @include flexWrapper(column);
+  gap: 48px;
+  width: 100%;
+  margin: 28px auto 0;
+
+  textarea {
+    resize: none;
+    height: 165px;
+  }
+}
+
+.contactsField {
+  padding: 15px 18px;
+  width: 100%;
+  border: 1px solid rgba(83, 64, 132, 1);
+  border-radius: 6px;
+}
+
+.contactsBtn {
+  margin-top: 20px;
+  width: 100%;
+}

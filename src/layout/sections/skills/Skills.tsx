@@ -12,7 +12,7 @@ import git from '../../../assets/images/icon (10) (convert.io).webp';
 import ts from '../../../assets/images/tyoescruipt.webp';
 import js from '../../../assets/images/icon.webp';
 import postSql from '../../../assets/images/Frame-14.webp';
-import Skill from './skill/Skill.tsx';
+import {Skill} from './skill/Skill.tsx';
 import './Skills.scss';
 
 const skillsList = [
@@ -36,7 +36,8 @@ export const Skills = () => {
             <div className={'skillsContainer'}>
                 <SectionTitle title={'Skills'}/>
                 <ul className={'skillsList'}>
-                    {skillsList.map(skill => <Skill key={skill.id}
+                    {skillsList.map(skill => <Skill
+                                                    key={skill.id}
                                                     skillImg={skill.iconSrc}
                                                     skillName={skill.skillTitle}/>)}
                 </ul>
