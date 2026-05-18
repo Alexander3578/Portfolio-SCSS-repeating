@@ -1,5 +1,5 @@
-@use '../../../components/mixins/Container' as *;
-@use '../../../components/mixins/FlexWrapper' as *;
+@use '../../../styles/mixins/Container' as *;
+@use '../../../styles/mixins/FlexWrapper' as *;
 
 .skillsSection {
   min-height: 30vh;

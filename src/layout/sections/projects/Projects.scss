@@ -1,5 +1,6 @@
-@use "../../../components/mixins/Container" as *;
-@use "../../../components/mixins/FlexWrapper" as *;
+@use "../../../styles/mixins/Container" as *;
+@use "../../../styles/mixins/FlexWrapper" as *;
+@use '../../../styles/_variables' as *;
 
 .projectSection {
   min-height: 80vh;

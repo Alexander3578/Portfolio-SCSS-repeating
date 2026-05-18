@@ -1,16 +1,21 @@
+@use '../../styles/_variables' as *;
+
 .customLink {
   cursor: pointer;
-  transition: .2s ease;
+  transition: $transition;
   border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
 
   &.primary {
-    background-color: rgba(82, 34, 208, 1);
-    color: white;
+    background-color: $primaryColor;
+    color: $buttonText;
   }
 
   &.secondary {
     background: transparent;
-    color: blue;
+    color: $primaryColor;
   }
 
   &.sm {

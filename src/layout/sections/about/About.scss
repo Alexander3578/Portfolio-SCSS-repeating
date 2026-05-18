@@ -1,5 +1,6 @@
-@use '../../../components/mixins/Container' as *;
-@use '../../../components/mixins/FlexWrapper' as *;
+@use '../../../styles/mixins/Container' as *;
+@use '../../../styles/mixins/FlexWrapper' as *;
+@use '../../../styles/_variables' as *;
 
 .aboutSection{
 }
@@ -12,6 +13,7 @@
   margin-top: 20px;
   max-width: 865px;
   width: 100%;
+  color: $textColor;
 
   position: relative;
 
@@ -24,7 +26,7 @@
 
     display: inline-block;
     width: 7px;
-    background-color: blue;
+    background-color: $primaryColor;
     border-radius: 2px;
   }
 }

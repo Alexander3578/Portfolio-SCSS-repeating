@@ -1,6 +1,8 @@
+@use '../../../../../styles/_variables' as *;
+
 .stackItem {
   padding: 8px 16px;
-  background-color: rgba(82, 34, 208, 1);
+  background-color: $primaryColor;
   border-radius: 4px;
-  color: white;
+  color: $buttonText;
 }

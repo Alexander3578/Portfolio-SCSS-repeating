@@ -1,3 +1,5 @@
+@use './../../../../styles/_variables' as *;
+
 .skillItem {
   max-width: 120px;
   width: 88px;
@@ -11,4 +13,5 @@
 
 .skillName {
   text-align: center;
+  color: $textColor;
 }

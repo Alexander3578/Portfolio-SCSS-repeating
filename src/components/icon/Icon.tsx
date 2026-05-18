@@ -1,5 +1,5 @@
 type IconPropsType = {
-    className: string
+    className?: string
     iconId: string
     width?: string
     height?: string

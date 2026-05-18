@@ -1,0 +1,13 @@
+@use '../../../../styles/_variables' as *;
+
+.socialListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  cursor: pointer;
+}
+
+.socialListItemName {
+  color: $textColor;
+}

@@ -1,5 +1,6 @@
-@use '../../../components/mixins/Container' as *;
-@use '../../../components/mixins/FlexWrapper' as *;
+@use '../../../styles/mixins/Container' as *;
+@use '../../../styles/mixins/FlexWrapper' as *;
+@use '../../../styles/_variables' as *;
 
 .contactsSection {
   min-height: 20vh;
@@ -12,6 +13,12 @@
 .contactsForm {
   margin: 0 auto;
   max-width: 532px;
+}
+
+.formLabel {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: $textColor;
 }
 
 .inputsWrapper {
@@ -31,6 +38,16 @@
   width: 100%;
   border: 1px solid rgba(83, 64, 132, 1);
   border-radius: 6px;
+
+  &::placeholder {
+    color: rgba(145, 155, 155, 1);
+
+  }
+
+  &::content {
+    color: $textColor;
+
+  }
 }
 
 .contactsBtn {

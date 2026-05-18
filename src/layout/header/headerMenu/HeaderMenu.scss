@@ -1,3 +1,5 @@
+@use '../../../styles/_variables' as *;
+
 .navList {
   display: flex;
   gap: clamp(20px, 4vw, 67px);
@@ -7,6 +9,8 @@
   display: inline-block;
   padding: 12px 20px;
   position: relative;
+
+  color: $textColor;
 
   &::before {
     content: '';
@@ -20,12 +24,12 @@
 
     height: 8px;
     border-radius: 4px;
-    background-color: blue;
+    background-color: $primaryColor;
 
     transform: scaleX(0);
     transform-origin: left;
 
-    transition: .2s ease-in-out;
+    transition: $transition;
   }
 
   &:hover::before {
@@ -40,6 +44,7 @@
   }
 
   &:active {
-    color: #fff;
+    color: $buttonText;
+  ;
   }
 }
