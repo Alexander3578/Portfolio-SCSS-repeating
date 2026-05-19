@@ -1,11 +1,17 @@
 @use '../../../styles/mixins/Container' as *;
 @use '../../../styles/mixins/FlexWrapper' as *;
 @use '../../../styles/_variables' as *;
+@use '../../../styles/media' as *;
 
-.aboutSection{
+.aboutSection {
+  padding: 300px 42px 0;
+
+  @include tablet {
+    padding-top: 72px;
+  }
 }
 
-.aboutContainer{
+.aboutContainer {
   @include container();
 }
 
@@ -13,6 +19,9 @@
   margin-top: 20px;
   max-width: 865px;
   width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
   color: $textColor;
 
   position: relative;

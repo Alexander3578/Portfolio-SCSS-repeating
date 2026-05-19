@@ -1,17 +1,27 @@
 @use './../../../../styles/_variables' as *;
+@use './../../../../styles/media' as *;
 
 .skillItem {
   max-width: 120px;
-  width: 88px;
+  width: 100%;
   flex-grow: 1;
+
+  @include mobile {
+    max-width: 88px;
+  }
 }
 
 .skillPicture {
+  width: 100%;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
 .skillName {
   text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.1354em;
+  text-transform: uppercase;
   color: $textColor;
 }

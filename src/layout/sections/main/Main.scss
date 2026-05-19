@@ -1,9 +1,12 @@
 @use '../../../styles/mixins/Container' as *;
 @use '../../../styles/mixins/FlexWrapper' as *;
+@use '../../../styles/mixins/Font' as *;
 @use '../../../styles/_variables' as *;
+@use '../../../styles/media' as *;
+
 
 .mainSection {
-  min-height: 70vh;
+  min-height: fit-content;
 }
 
 .mainContainer {
@@ -18,35 +21,76 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: minmax(100%, auto);
+    grid-auto-rows: auto;
+    padding: 0 42px;
+
+    .mainArrow {
+      display: none;
+    }
+  }
 }
 
 .mainContent {
   max-width: 520px;
   width: 100%;
+
+  @include tablet {
+    grid-row: 2/3;
+    justify-items: center;
+
+    margin-top: 64px;
+    text-align: center;
+    max-width: 100%;
+  }
 }
 
 .mainSmall {
-  font-family: 'Tinos' ,sans-serif;
-  color: $titleColor;
+  @include font(16, 20, 400, $titleColor, 1.2, 'Tinos');
 }
 
 .mainAuthor {
   margin: 10px 0;
-  color: $primaryColor;
+  @include font(40, 72, 600, $primaryColor);
+
+  @include tablet {
+    margin-top: 12px;
+  }
 }
 
 .mainText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   color: $textColor;
+
+  @include tablet {
+    margin: 16px 0;
+  }
 }
 
 .mainLink {
   display: inline-block;
   margin-top: 30px;
+
+  @include tablet {
+    margin: 0;
+  }
 }
 
 .photoMain {
   max-width: 577px;
   max-height: 433px;
   object-fit: cover;
+  margin: 0 auto;
+  width: 100%;
+
+  @include mobile {
+    max-width: 320px;
+    max-height: 240px;
+  }
 }
 

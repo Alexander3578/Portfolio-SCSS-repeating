@@ -1,5 +1,6 @@
 @use '../../../styles/mixins/Container' as *;
 @use '../../../styles/mixins/FlexWrapper' as *;
+@use '../../../styles/media' as *;
 
 .skillsSection {
   min-height: 30vh;
@@ -15,5 +16,10 @@
   @include flexWrapper(row, center, flex-start, wrap);
   row-gap: 58px;
   column-gap: 120px;
+
+  @include tablet {
+    row-gap: 82px;
+    column-gap: 48px;
+  }
 }
 

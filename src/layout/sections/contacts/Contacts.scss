@@ -13,11 +13,14 @@
 .contactsForm {
   margin: 0 auto;
   max-width: 532px;
+  width: 100%;
 }
 
 .formLabel {
   display: inline-block;
   margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 14px;
   color: $textColor;
 }
 
@@ -40,17 +43,20 @@
   border-radius: 6px;
 
   &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
     color: rgba(145, 155, 155, 1);
-
   }
 
   &::content {
+    font-weight: 500;
+    font-size: 16px;
     color: $textColor;
-
   }
 }
 
 .contactsBtn {
+  display: block;
   margin-top: 20px;
   width: 100%;
 }

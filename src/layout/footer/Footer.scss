@@ -1,8 +1,13 @@
 @use '../../styles/_variables' as *;
+@use '../../styles/media' as *;
 
 .footer {
   min-height: 40vh;
   padding-top: 190px;
+
+  @include tablet {
+    padding-top: 150px;
+  }
 }
 
 .footerContainer {
@@ -14,5 +19,9 @@
 .footerSmall {
   display: block;
   text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
   color: $textColor;
 }

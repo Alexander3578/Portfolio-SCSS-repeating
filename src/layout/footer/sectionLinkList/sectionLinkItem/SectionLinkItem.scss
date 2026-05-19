@@ -1,6 +1,8 @@
 @use '../../../../styles/_variables' as *;
 
 .sectionLinkItem {
+  font-weight: 400;
+  font-size: 14px;
   color: $textColor;
   cursor: pointer;
 }

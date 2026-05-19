@@ -1,3 +1,5 @@
+@use './media' as *;
+
 *,
 *::before,
 *::after {
@@ -38,10 +40,10 @@ button {
 
 section {
   padding-top: 140px;
-//
-//  @media ${theme.media.mobile} {
-//  padding: 80px 0;
-//}
+
+  @include tablet {
+    padding-top: 100px;
+  }
 }
 
 //section:nth-of-type(odd) {
