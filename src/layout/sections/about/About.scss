@@ -22,7 +22,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
-  color: $textColor;
+  color: var(--textColor);
 
   position: relative;
 
@@ -35,7 +35,7 @@
 
     display: inline-block;
     width: 7px;
-    background-color: $primaryColor;
+    background-color: var(--primaryColor);
     border-radius: 2px;
   }
 }

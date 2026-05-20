@@ -7,7 +7,7 @@
   max-width: 522px;
   min-width: 280px;
   border-radius: 6px;
-  background-color: $projectsFont;
+  background-color: var(--projectsFont);
   box-shadow: 2px 2px 32px 0 rgba(40, 38, 44, 0.15);
 
   @include tablet {
@@ -31,7 +31,7 @@
   margin: 29px 0 11px;
   font-weight: 600;
   font-size: 20px;
-  color: $titleColor;
+  color: var(--titleColor);
 }
 
 .stackList {
@@ -47,5 +47,5 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: .04em;
-  color: $textColor;
+  color: var(--textColor);
 }

@@ -15,7 +15,7 @@
   padding: 12px 20px;
   position: relative;
 
-  color: $textColor;
+  color: var(--textColor);
 
   &::before {
     content: '';
@@ -29,7 +29,7 @@
 
     height: 8px;
     border-radius: 4px;
-    background-color: $primaryColor;
+    background-color: var(--primaryColor);
 
     transform: scaleX(0);
     transform-origin: left;
@@ -41,15 +41,17 @@
     transform: scaleX(1);
   }
 
-  &:active::before {
-    right: 0;
-    left: 0;
-    height: 100%;
-    transform: scaleX(1);
+  &.active {
+    &::before {
+      right: 0;
+      left: 0;
+      height: 100%;
+      transform: scaleX(1);
+      color: var(--buttonText);;
+    }
   }
 
-  &:active {
-    color: $buttonText;
-  ;
+ &.active {
+    color: var(--buttonText);;
   }
 }

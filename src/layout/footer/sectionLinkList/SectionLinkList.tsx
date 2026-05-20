@@ -1,17 +1,22 @@
 import './SectionLinkList.scss'
-import {SectionLinkItem} from './sectionLinkItem/SectionLinkItem.tsx';
+import {CustomLink} from '../../../components/link/CustomLink.tsx';
 
 const sectionLinkItems = [
     {id: 'projects', name: 'Projects'},
-    {id: 'contact', name: 'Contact'},
+    {id: 'contacts', name: 'Contact'},
 ]
 export const SectionLinkList = () => {
     return (
         <ul className={'sectionLinkList'}>
             {sectionLinkItems.map(item =>
-                <SectionLinkItem key={item.id}
-                                 itemName={item.name}/>)}
+                <li key={item.id}
+                    className={'sectionLinkItem'}>
+                    <CustomLink to={item.id}
+                                smooth
+                                title={item.name}/>
+                </li>
+            )}
         </ul>
-    );
+    )
 };
 

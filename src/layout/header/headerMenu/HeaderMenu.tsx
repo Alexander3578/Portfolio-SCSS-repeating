@@ -3,7 +3,7 @@ import {CustomLink} from '../../../components/link/CustomLink.tsx';
 
 const headerItemsList = [
     {title: 'Projects', id: 'projects'},
-    {title: 'Contact', id: 'contact'}
+    {title: 'Contact', id: 'contacts'}
 ]
 
 export const HeaderMenu = () => {
@@ -14,8 +14,11 @@ export const HeaderMenu = () => {
                     return (
                         <li key={item.id}
                             className={"listItem"}>
-                            <CustomLink title={item.title}
-                                        size={'md'}
+                            <CustomLink to={item.id}
+                                        smooth spy
+                                        activeClass={'active'}
+                                        title={item.title}
+                                        customSize={'md'}
                                         className={'headerLink'}/>
                         </li>
                     )

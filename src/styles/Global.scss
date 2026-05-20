@@ -1,5 +1,30 @@
 @use './media' as *;
 
+:root {
+  --bgColor: rgba(250, 250, 250, 1);
+
+
+  --primaryColor: rgba(82, 34, 208, 1);
+
+  --titleColor: rgba(21, 23, 23, 1);
+  --textColor: rgba(31, 38, 38, 1);
+  --buttonText: rgba(219, 255, 255, 1);
+
+  --projectsFont: rgba(245, 242, 253, 1);
+}
+
+.dark {
+  --bgColor: rgba(4, 31, 49, 1);
+
+  --primaryColor: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+
+  --titleColor: rgba(189, 235, 234, 1);
+  --textColor: rgba(189, 235, 234, 1);
+  --buttonText: rgba(37, 39, 40, 1);
+
+  --projectsFont: rgba(245, 242, 253, 1);
+}
+
 *,
 *::before,
 *::after {
@@ -16,6 +41,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.2;
   min-width: 365px;
+  background-color: var(--bgColor);
 }
 
 code {

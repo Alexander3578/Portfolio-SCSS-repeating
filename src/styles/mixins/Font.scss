@@ -1,7 +1,7 @@
 @use './../variables' as *;
 
 
-@mixin font( $Fmin, $Fmax, $weight: 500, $color: $titleColor, $lineHeight: 1.2, $family: 'Montserrat') {
+@mixin font( $Fmin, $Fmax, $weight: 500, $color: var(--titleColor), $lineHeight: 1.2, $family: 'Montserrat') {
   font-family: $family;
   font-weight: $weight;
   color: $color;

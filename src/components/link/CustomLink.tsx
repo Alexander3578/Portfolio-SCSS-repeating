@@ -1,14 +1,15 @@
 import './CustomLink.scss'
+import {Link} from 'react-scroll';
 
 type BaseProps = {
     title: string
     variant?: 'primary' | 'secondary'
-    size?: 'lg' | 'md' | 'sm'
+    customSize?: 'lg' | 'md' | 'sm'
     className?: string
 }
 
-type LinkProps = BaseProps & React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-    as?: 'a'
+type LinkProps = BaseProps & React.ComponentProps<typeof Link> & {
+    as?: 'link'
 }
 
 type ButtonProps = BaseProps & React.ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -19,22 +20,22 @@ type CustomLinkProps = LinkProps | ButtonProps
 
 
 export const CustomLink = (props: CustomLinkProps) => {
-    const { title, variant, size, className, as = 'a', ...rest } = props as any
+    const { title, variant, customSize, className, as = 'link', ...rest } = props as any
 
-    const classes = `${className ?? ''} customLink ${variant ?? ''} ${size ?? ''}`
+    const classes = `${className ?? ''} customLink ${variant ?? ''} ${customSize ?? ''}`
 
     if (as === 'button') {
         return (
-            <button className={classes} {...(rest as React.ButtonHTMLAttributes<HTMLButtonElement>)}>
+            <button className={classes} {...rest}>
                 {title}
             </button>
         )
     }
 
     return (
-        <a className={classes} {...(rest as React.AnchorHTMLAttributes<HTMLAnchorElement>)}>
+        <Link className={classes} {...rest}>
             {title}
-        </a>
+        </Link>
     )
 }
 

@@ -49,12 +49,12 @@
 }
 
 .mainSmall {
-  @include font(16, 20, 400, $titleColor, 1.2, 'Tinos');
+  @include font(16, 20, 400, var(--titleColor), 1.2, 'Tinos');
 }
 
 .mainAuthor {
   margin: 10px 0;
-  @include font(40, 72, 600, $primaryColor);
+  @include font(40, 72, 600, var(--primaryColor));
 
   @include tablet {
     margin-top: 12px;
@@ -65,7 +65,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: $textColor;
+  color: var(--textColor);
 
   @include tablet {
     margin: 16px 0;

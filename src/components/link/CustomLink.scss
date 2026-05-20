@@ -10,13 +10,13 @@
   text-align: center;
 
   &.primary {
-    background-color: $primaryColor;
-    color: $buttonText;
+    background-color: var(--primaryColor);
+    color: var(--buttonText);
   }
 
   &.secondary {
     background: transparent;
-    color: $primaryColor;
+    color: var(--primaryColor);
   }
 
   &.sm {

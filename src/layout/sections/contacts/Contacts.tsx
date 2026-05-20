@@ -4,7 +4,8 @@ import './Contacts.scss'
 
 export const Contacts = () => {
     return (
-        <section className={'contactsSection'}>
+        <section id={'contacts'}
+                 className={'contactsSection'}>
             <div className={'contactsContainer'}>
                 <SectionTitle title={'Contacts'}/>
                 <form className={'contactsForm'}>
@@ -40,7 +41,7 @@ export const Contacts = () => {
                                 className={'contactsBtn'}
                                 title={'Submit'}
                                 as={'button'}
-                                size={'lg'}
+                                customSize={'lg'}
                                 variant={'primary'}/>
                 </form>
             </div>
