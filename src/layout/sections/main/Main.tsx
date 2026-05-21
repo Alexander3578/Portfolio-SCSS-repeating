@@ -1,9 +1,22 @@
 import {CustomLink} from '../../../components/link/CustomLink.tsx';
 import lightPhoto from '../../../assets/images/support 1 (convert.io).webp'
+import darkPhoto from '../../../assets/images/blackPhoto.webp'
 import './Main.scss'
 import {Icon} from '../../../components/icon/Icon.tsx';
+import { useContext } from 'react'
+import { ThemeContext } from '../../../components/ThemeSwitch.tsx'
 
 export const Main = () => {
+
+    const ctx = useContext(ThemeContext)
+
+    if (!ctx) return null
+
+    const image =
+        ctx.theme === 'dark'
+            ? darkPhoto
+            : lightPhoto
+
     return (
         <section className={'mainSection'}>
             <div className={'mainContainer'}>
@@ -18,7 +31,7 @@ export const Main = () => {
                                 variant={'primary'}
                                 customSize={'md'}/>
                 </div>
-                <img src={lightPhoto} alt={'avatar'} className={'photoMain'}/>
+                <img src={image} alt={'avatar'} className={'photoMain'}/>
                 <Icon className={'mainArrow'} iconId={'arrowBottom'} width={'18'} height={'28'} viewBox={'0 0 18 28'}/>
             </div>
         </section>

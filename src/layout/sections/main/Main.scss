@@ -20,6 +20,7 @@
     bottom: -44px;
     left: 50%;
     transform: translateX(-50%);
+    color: var(--mainArrowColor);
   }
 
   @include tablet {
@@ -55,6 +56,10 @@
 .mainAuthor {
   margin: 10px 0;
   @include font(40, 72, 600, var(--primaryColor));
+  background: var(--primaryColor);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @include tablet {
     margin-top: 12px;

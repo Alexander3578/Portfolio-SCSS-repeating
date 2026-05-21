@@ -5,6 +5,7 @@ import {Projects} from './layout/sections/projects/Projects.tsx';
 import {Skills} from './layout/sections/skills/Skills.tsx';
 import {Contacts} from './layout/sections/contacts/Contacts.tsx';
 import {Footer} from './layout/footer/Footer.tsx';
+import {ThemeSwitcher} from './components/SwitchButton.tsx';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
             <Skills />
             <Contacts />
             <Footer />
+            <ThemeSwitcher />
         </>
     )
 }
